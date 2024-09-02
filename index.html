@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>erthos | DEMO</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Swiper JS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <header id="navbar">
+
+        <a href="/" id="logo">
+            <svg id="logoSVG" width="80" height="19" fill="none" viewBox="0 0 260 60">
+                <path fill="currentColor"
+                    d="M110.065 34.112h-26.08c.185 7.566 5.479 11.218 10.46 11.218 4.98 0 7.813-2.345 9.263-5.803h5.925c-1.51 6.004-6.93 11.024-15.182 11.024-10.713 0-16.631-7.962-16.631-18.336 0-11.158 7.182-18.202 16.445-18.202 10.394 0 16.505 8.94 15.813 20.092zM94.251 19.107c-5.04 0-9.702 2.868-10.207 9.918h19.97c-.187-4.96-3.651-9.918-9.763-9.918m36.229-4.631v6.326a20 20 0 0 0-3.212-.261c-5.293 0-7.94 2.935-7.94 10.763V49.7h-5.732V14.603h5.606v6.132c1.702-3.98 5.1-6.132 9.576-6.326.565 0 1.01 0 1.702.067m3.996-8.679h5.733v8.806h6.423v4.765h-6.423v20.809c0 3.652.252 4.563 3.524 4.563h2.899v4.96h-4.156c-6.49 0-8-1.501-8-8.806zm22.051-3.392V19.89c1.955-3.324 5.227-5.87 10.959-5.87 8.193 0 11.152 5.481 11.152 13.503v22.183h-5.732v-20.42c0-5.415-.885-10.113-7.435-10.113-5.546 0-8.944 3.847-8.944 11.48v19.053h-5.732v-47.3zm31.441 29.884c0 9.395 4.914 13.048 10.141 13.048 5.226 0 10.141-4.048 10.141-13.048s-4.915-13.049-10.141-13.049c-5.227 0-10.141 3.459-10.141 13.049m10.147-18.27c7.874 0 16.253 5.543 16.253 18.27s-8.379 18.268-16.253 18.268c-7.873 0-16.252-5.542-16.252-18.268s8.379-18.27 16.252-18.27m45.346 10.831h-5.985c-.945-4.176-3.97-5.804-8-5.804-3.338 0-7.115 1.306-7.115 4.436 0 2.808 1.888 4.048 5.167 4.765l4.787.978c6.172 1.173 11.591 3.72 11.591 10.442s-6.051 10.897-13.798 10.897c-8.818 0-13.859-6.065-14.55-12.197h6.045c.944 4.503 3.59 7.177 8.631 7.177 4.349 0 7.873-1.89 7.873-5.22 0-3.653-3.211-4.96-6.869-5.804l-5.04-1.046c-4.602-1.045-9.643-3.13-9.643-9.724 0-6.199 6.052-9.784 13.546-9.784s12.282 4.175 13.353 10.897zm3.258-5.576c0-3.72 2.753-6.26 6.184-6.26s6.165 2.54 6.165 6.26-2.753 6.212-6.165 6.212-6.184-2.527-6.184-6.213m1.217 0c0 3.055 2.194 5.1 4.961 5.1 2.766 0 4.947-2.044 4.947-5.1s-2.128-5.147-4.947-5.147-4.961 2.057-4.961 5.146m6.497 3.069-1.337-2.527h-1.25v2.527h-1.35v-6.628h2.008c1.929 0 3.099.348 3.099 2.057 0 .73-.346 1.38-1.183 1.763l1.516 2.808zm-.18-4.55c0-.798-.611-1-1.536-1h-.871v1.978h.958c1.037 0 1.449-.335 1.449-.979M43.82 49.29a23.37 23.37 0 0 1-14.85 5.314 23.2 23.2 0 0 1-8.458-1.58 23.5 23.5 0 0 1-6.391-3.733l-3.365 4.188A28.75 28.75 0 0 0 28.976 60a28.5 28.5 0 0 0 10.381-1.944c2.86-1.105 5.5-2.66 7.84-4.577l-3.364-4.188zM5.65 34.52A23.9 23.9 0 0 1 8.514 18.9a23.7 23.7 0 0 1 5.586-6.595 23.6 23.6 0 0 1 6.404-3.713L18.59 3.559a28.7 28.7 0 0 0-7.854 4.557 28.9 28.9 0 0 0-6.856 8.09A29.2 29.2 0 0 0 .356 26.23a29.2 29.2 0 0 0 .006 9.134l5.28-.844zM28.963 8.659c2.373 0 4.296-1.939 4.296-4.33S31.336 0 28.963 0c-2.372 0-4.295 1.938-4.295 4.33 0 2.39 1.923 4.329 4.295 4.329M6.201 48.4c2.373 0 4.296-1.938 4.296-4.33 0-2.39-1.923-4.328-4.296-4.328-2.372 0-4.296 1.938-4.296 4.329S3.83 48.4 6.201 48.4m45.532 0c2.372 0 4.295-1.938 4.295-4.33 0-2.39-1.923-4.328-4.295-4.328-2.373 0-4.296 1.938-4.296 4.329s1.923 4.33 4.296 4.33M37.429 8.592a23.6 23.6 0 0 1 6.404 3.713 23.7 23.7 0 0 1 5.585 6.594 23.9 23.9 0 0 1 2.866 15.622l5.28.844c.48-3.002.492-6.085.007-9.134a29.2 29.2 0 0 0-3.518-10.026 28.9 28.9 0 0 0-6.856-8.089 28.7 28.7 0 0 0-7.853-4.557z">
+                </path>
+            </svg>
+        </a>
+
+        <div id="navbarMenu">
+
+            <button id="mission">
+                Mission
+                <svg viewBox="0 0 448 512">
+                    <path
+                        d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                </svg>
+            </button>
+
+            <button id="studio">
+                Studio
+                <svg viewBox="0 0 448 512">
+                    <path
+                        d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                </svg>
+            </button>
+
+            <button id="community">
+                <p>Community</p>
+            </button>
+
+        </div>
+
+
+    </header>
+
+    <!-- POP-UPS AFTER HOVERING ON THE NAVBAR MENU  -->
+
+    <div id="mission_dropdown">
+        <div id="mission_dropdown_texts">
+            <a href="/">Our Mission</a>
+            <a href="">Our Company</a>
+            <p>Everything we do falls under <span>Planet erthos®</span>, our ecosystem and belief in putting Earth
+                first.</p>
+        </div>
+    </div>
+    <div id="studio_dropdown">
+        <div id="studio_dropdown_texts">
+            <p><a href="">Explore erthos Studio</a></p>
+            <p><a href="">Our capabilities</a></p>
+            <p><a href="">Our technology</a></p>
+            <p><a href="">Our work</a></p>
+
+            <p id="studio_dropdown_long_text">
+                <span>erthos® Studio</span> is our pathway to making industry scalable biomaterials a reality for global
+                brands.
+            </p>
+        </div>
+    </div>
+
+    <!-- HERO -->
+
+    <div id="hero">
+        <div id="page1">
+            <video src="page1_bg.mp4" muted loop autoplay></video>
+            <div id="page1_middle_text">
+                <p>We reimagine the building blocks of plastics.</p>
+                <a href="/"><button id="our_mission">
+                        Our Mission <svg viewBox="0 0 448 512">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                        </svg>
+                    </button></a>
+
+            </div>
+        </div>
+
+        <div id="page2">
+            <div id="page2_image"><img src="page2_image.avif" alt="image">
+
+                <div id="text1">
+                    Our global dependency on plastics is ready for a positive shift from the inside out.
+                </div>
+
+                <div id="text2">As a climate technology company, our commitment is to forge a material-conscious future
+                    with cutting-edge technology.
+                    <a href="/">Explore our mission <svg viewBox="0 0 448 512">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                        </svg></a>
+                </div>
+
+
+            </div>
+            <div id="explore_our_mission_page2_bottom" class="mission_button_on_page_buttom">
+                <a href="/"><span>+</span> Explore our mission</a>
+            </div>
+
+        </div>
+
+        <div id="page3">
+            <video src="page3_bg.mp4" loop muted autoplay></video>
+            <div id="texts_on_page3">
+                <p>erthos® Studio</p>
+                <h2>We leverage the powerofourproprietary L-Alplatform, in-house expertise and novel ingredients
+                    database to rapidly design industry scalable biomaterials for leading brands globally</h2>
+            </div>
+
+            <div id="explore_our_mission_page3_bottom" class="mission_button_on_page_buttom">
+                <a href="/"><span>+</span> Explore erthos® Studio </a>
+            </div>
+
+        </div>
+
+        <div id="page4">
+            <div id="page4_header">
+                <h1>Our Technology</h1>
+                <p>Our proprietary machine learning AI platform that streamlines complex R&D processes and accelerates
+                    the journey from ideation to market by 5x. </p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide"><video src="page4_content/page4_1st_video.mp4" autoplay muted
+                            loop></video></div>
+                    <div class="swiper-slide"><video src="page4_content/page4_2nd_video.mp4" autoplay muted loop></div>
+                    <div class="swiper-slide"><video src="page4_content/page4_3rd_video.mp4" autoplay muted loop></div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <div id="page4_button">
+                <div id="explore_our_mission_page4_bottom" class="mission_button_on_page_buttom">
+                    <a href="/"><span>+</span> Explore our technology</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="page5">
+            <div id="section_header_page5">
+                <h2>Our Featured Work</h2>
+                <p>We work with like-minded brands, ready to exponentially change the trajectory of sustainable
+                    materials.
+
+                    <a href="/">Explore our Work
+                        <svg viewBox="0 0 448 512">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                        </svg>
+                    </a>
+
+                </p>
+            </div>
+            <div id="page5_all_images">
+                <div id="page5_image1" class="hover_pointer image_zoom_on_hover page5_after">
+                    <img src="page5_content/page5_image1.avif">
+                    <div id="page5_image1_texts" class="text_type">
+                        <p>Bioresin designed as a 1-for-1 alternative to injection grade polypropylene for caps,
+                            closures.
+
+                            <a href="/">View Project
+                                <svg viewBox="0 0 448 512">
+                                    <path
+                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                </svg>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="page5_image2_image3_holder">
+                    <div id="page5_image2" class="page5_image2_image3 hover_pointer image_zoom_on_hover page5_after">
+                        <img src="page5_content/page5_image2.avif">
+                        <div class="text_type hover_pointer">
+                            <p>Bioresin with high barrier properties designed as a 1-for-1 alternative to injection
+                                grade polypropylene for personal care.
+
+                                <a href="/">View Project
+                                    <svg viewBox="0 0 448 512">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="page5_image3" class="page5_image2_image3 hover_pointer image_zoom_on_hover page5_after">
+                        <img src="page5_content/page5_image3.avif">
+                        <div class="text_type">
+                            <p>Bioadditive to improve the functionality of PLA and act as an alternative to ESO.
+
+                                <a href="/">View Project
+                                    <svg viewBox="0 0 448 512">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page5_button">
+                <div id="explore_our_mission_page5_bottom" class="mission_button_on_page_buttom">
+                    <a href="/"><span>+</span> Explore our work</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="page6">
+
+            <div id="page6_content_parent">
+
+                <div id="page6_header">
+                    <p>Latest from the community</p>
+                    <a href="/">All community
+                        <svg viewBox="0 0 448 512">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div id="page6_image1_div" class="page6_image_container hover_pointer image_zoom_on_hover">
+                    <div class="page6_images "><img src="page6_content/page6_image1.avif" id="page6_image1"></div>
+                    <div class="page6_bottom_text">
+                        <p class="date_type">Apr 17, 2024 <span>People</span></p>
+                        <div class="text_type">
+                            <p>Biomaterials Startup Erthos Announces $11.2 Million Funding For Plant-Powered Plastic
+                                Substitute
+                                <a href="/">Read more
+                                    <svg viewBox="0 0 448 512">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                    </svg></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="page6_image2_div" class="page6_image_container hover_pointer image_zoom_on_hover">
+                    <div class="page6_images"><img src="page6_content/page6_image2.avif"></div>
+                    <div class="page6_bottom_text">
+                        <p class="date_type">Dec 31, 2023 <span>People</span></p>
+                        <div class="text_type">
+                            <p>COP28 Unwrapped: Was it Worth it?
+                                <a href="/">Read more
+                                    <svg viewBox="0 0 448 512">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                    </svg></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="page6_image3_div" class="page6_image_container hover_pointer image_zoom_on_hover">
+                    <div class="page6_images"><img src="page6_content/page6_image3.avif" id="page6_image3"></div>
+                    <div class="page6_bottom_text">
+                        <p class="date_type">Aug 30, 2023 <span>Planet</span></p>
+                        <div class="text_type">
+                            <p>The uncomfortable truth about the soggy straw.
+                                <a href="/">Read more
+                                    <svg viewBox="0 0 448 512">
+                                        <path
+                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                    </svg></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="page7">
+            <div id="page7_content">
+                <div id="page7_texts" class="text_type">
+                    <h2>Work with us</h2>
+                    <p>Making scalable biomaterials a reality for your global supply chains.
+                        <a href="/">Get in touch
+                            <svg viewBox="0 0 448 512">
+                                <path
+                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+                <video src="page7_video.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div id="footer_all_options">
+            <div id="footer_about" class="footer_options">
+                <p>About</p>
+                <a href="/">Our mission</a>
+                <a href="/">Community</a>
+                <a href="/">Our company</a>
+            </div>
+            <div id="footer_studio" class="footer_options">
+                <p>Studio</p>
+                <a href="/">Explore erthos Studio</a>
+                <a href="/">ZYA™</a>
+                <a href="/">Our capabilities</a>
+                <a href="/">Our work</a>
+                <a href="/">Our technology</a>
+            </div>
+            <div id="footer_connect" class="footer_options">
+                <p>Connect</p>
+                <a href="/">Work with us</a>
+                <a href="/">Instagram</a>
+                <a href="/">LinkedIn</a>
+                <a href="/">TikTok</a>
+            </div>
+
+            <div id="footer_middle_part">
+                <p>Community</p>
+                <p>Stay up to date on erthos® news, projects and more</p>
+                <input type="text" placeholder="Enter email">
+                <div id="footer_checkbox"><input type="checkbox">
+                    <span>I accept the Privacy Policy</span>
+                </div>
+            </div>
+
+        </div>
+        <div id="footer_end_text">
+            <a>© Copyright 2024 erthos® Inc. All rights reserved.</a>
+            <a href="/">Privacy Policy</a>
+            <a href="/">Terms of Use</a>
+            <a href="/">Site by WØRKS</a>
+
+        </div>
+    </footer>
+
+
+    <!-- Swiper JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--gsap link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
