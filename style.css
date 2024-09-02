@@ -587,6 +587,7 @@ svg {
         }
 
         #page4_button {
+            pointer-events: none;
             height: 75%;
             width: 100%;
             display: flex;
@@ -811,6 +812,7 @@ svg {
         }
 
         #page5_button {
+            pointer-events: none;
             position: absolute;
             height: 100%;
             width: 100%;
