@@ -442,9 +442,11 @@ gsap.from( '#loading_screen_text p span', {
 
 window.addEventListener("load", (e)=> {
     console.log(e);
-    const [navigation] = performance.getEntriesByType("navigation");
-    const loadTime = navigation.loadEventEnd - navigation.startTime;
-    console.log(`Page load time: ${loadTime} ms`);
+    setTimeout(() => {
+        const [navigation] = performance.getEntriesByType("navigation");
+        const loadTime = navigation.loadEventEnd - navigation.startTime;
+        console.log(`Page load time: ${loadTime} ms`);
+      }, 0);
     setInterval(() => {
         
         loading_screen.remove();
