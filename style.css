@@ -15,6 +15,29 @@ body {
     }
 }
 
+#loading_screen{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    /* background-color: transparent; */
+
+    #loading_screen_text{
+        max-width: 700px;
+        position: absolute;
+        top: 35%;
+        left: 3%;
+        z-index: 6;
+
+        p {
+            color: white;
+            line-height: 1.2;
+            font-weight: 500;
+            font-size: 3.5rem;
+        }
+    }
+}
+
 #navbar {
     position: fixed;
     z-index: 50;

@@ -425,3 +425,26 @@ gsap.to("#explore_our_mission_page5_bottom span", {
         toggleActions: "restart reverse restart reverse",
     }
 })
+
+// STARTING LOADING ANIMATION
+const loading_screen = document.querySelector("#loading_screen");
+const loading_screen_text = document.querySelector("#loading_screen_text p");
+
+split_text(loading_screen_text);
+window.addEventListener("load", ()=> {
+gsap.from( '#loading_screen span', {
+    opacity: 0,
+    y: 50,
+    stagger: 0.2,
+    duration: 1,
+    ease: "elastic.out(0.1, 0.09)",
+    delay: 0.5,
+    scrollTrigger: {
+        trigger: "#page5",
+        start: "top 70%",
+        end: "top 0",
+        
+    }
+})
+})
+
