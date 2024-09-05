@@ -431,20 +431,23 @@ const loading_screen = document.querySelector("#loading_screen");
 const loading_screen_text = document.querySelector("#loading_screen_text p");
 
 split_text(loading_screen_text);
-window.addEventListener("load", ()=> {
-gsap.from( '#loading_screen span', {
+gsap.from( '#loading_screen_text p span', {
     opacity: 0,
-    y: 50,
-    stagger: 0.2,
-    duration: 1,
+    y: 40,
+    stagger: 0.1,
+    duration: 2,
     ease: "elastic.out(0.1, 0.09)",
-    delay: 0.5,
-    scrollTrigger: {
-        trigger: "#page5",
-        start: "top 70%",
-        end: "top 0",
-        
-    }
+    delay: 0.3,
 })
+
+window.addEventListener("load", (e)=> {
+    console.log(e);
+    const [navigation] = performance.getEntriesByType("navigation");
+    const loadTime = navigation.loadEventEnd - navigation.startTime;
+    console.log(`Page load time: ${loadTime} ms`);
+    setInterval(() => {
+        
+        loading_screen.remove();
+    }, 1500);
 })
 
