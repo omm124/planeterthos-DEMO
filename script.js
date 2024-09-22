@@ -440,16 +440,17 @@ gsap.from( '#loading_screen_text p span', {
     delay: 0.3,
 })
 
-window.addEventListener("load", (e)=> {
-    console.log(e);
-    setTimeout(() => {
-        const [navigation] = performance.getEntriesByType("navigation");
-        const loadTime = navigation.loadEventEnd - navigation.startTime;
-        console.log(`Page load time: ${loadTime} ms`);
-      }, 0);
-    setInterval(() => {
-        
+window.addEventListener("load", (e) => {
+    console.log(e.timeStamp);
+    if (e.timeStamp > 1800) {
         loading_screen.remove();
-    }, 1500);
-})
+        document.body.style.overflow = "visible !important";
+    } else {
+        console.log("2");
+        setTimeout(() => {
+            loading_screen.remove();
+            document.body.style.overflow = "visible !important";
+        }, 1800);
+    }
+  });
 
