@@ -909,6 +909,7 @@ svg {
     }
 
     #page6 {
+        z-index: 11;
         background-color: white;
         height: 70vw;
         width: auto;
