@@ -912,6 +912,7 @@ svg {
     }
 
     #page6 {
+        z-index: 11;
         background-color: white;
         height: 70vw;
         z-index: 11;
@@ -1340,3 +1341,5 @@ a:hover svg {
         }
     }
 }
+
+/* END */
